@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene background="color:yellow">
+
+    <a-camera position="20 10 0"></a-camera>
+
+    <a-assets timeout="10000">
+
+      <a-asset-item id="train" src="./Super Jaban.glb"></a-asset-item>
+
+    </a-assets>
+    <a-entity>
+        <a-entity position="0 0 -25" scale="0.5 0.5 0.5" gltf-model="#train" >
+        </a-entity>
+      </a-entity>
+  </a-scene>
+</body>
+
+</html>
